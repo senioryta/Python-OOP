@@ -1,15 +1,18 @@
 # template
 class Estudent:
-	pass
+	
+	# constructor __init__() | magic method
+	def __init__(self,InputName,InputID):
+		# object attribute
+		self.name = InputName
+		self.id = InputID
 
 # object 
-auxilia = Estudent()
-auxilia.name = "auxilia"
-auxilia.id = 113
-
-aurito = Estudent()
-aurito.name = "aurito"
-aurito.id = 114
+auxilia = Estudent("auxilia",113)
+aurito = Estudent("aurito",114)
+alexandra = Estudent(InputID=115,InputName="alexandra")
+beatriz = Estudent(InputName="beatriz",InputID=116)
 
 print(auxilia.__dict__)
 print(aurito.__dict__)
+print(alexandra.__dict__)
