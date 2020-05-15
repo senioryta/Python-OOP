@@ -9,6 +9,10 @@ class Estudent:
 		self.id = id
 		Estudent.total += 1
 
+	# method
+	def showinfo(self):
+		print("{} \n\t id : {}".format(self.name,self.id))
+
 # subclass
 class Estudent_a(Estudent):
 	pass
@@ -23,6 +27,6 @@ carmelinda = Estudent("carmelinda",136)
 natalia = Estudent_a("natalia",137)
 sandra = Estudent_b("xandra",138)
 
-print(carmelinda.__dict__)
-print(natalia.__dict__)
-print(sandra.__dict__)
+carmelinda.showinfo()
+natalia.showinfo()
+sandra.showinfo()
